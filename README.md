@@ -1,3 +1,3 @@
-Demo link -  https://gavrilyukyura.github.io/Baner/
+Demo link - https://GavrilyukYura.github.io/Baner/
 
 Реалізував тестове завдання створивши простий додаток на Реакті який отримує данні з серверу та створює по ним банери.
