@@ -1,0 +1,113 @@
+.card-image img {
+  object-fit: contain;
+}
+
+.sneakers {
+  font-family: 'Barlow Condensed', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #9EA3AB 75%, #E3E3E3 100%);
+  border: 1px solid #A5A9B0;
+  box-sizing: border-box;
+  margin-right: 20px;
+
+  &__image {
+    position: absolute;
+    bottom: 80px;
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 30px;
+    left: 106px;
+    background-image: url(../../images/Vector.svg);
+    width: 98px;
+    height: 35px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 140px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
+
+    color: #111111;
+  }
+
+  &__price {
+    position: absolute;
+    top: 236px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px 6px;
+    gap: 10px;
+    width: 110px;
+    height: 39px;
+    background: #FF0000;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+  &__button {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid #BFE2FF;
+    position: relative;
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    background: #111111;
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+        color: #FFF;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
+        transition: left 0.7s;
+    }
+    &:hover:before,
+    &:active:before,
+    &:focus:before {
+        left: 100%;
+    }
+  }
+}
+
+.container {
+  position: absolute;
+  bottom: 40px;
+}
